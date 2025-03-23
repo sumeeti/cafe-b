@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Reading Tracker</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="tracker-container">
+            <h2>Reading Tracker</h2>
+            <label for="totalPages">Total Pages in Book:</label>
+            <input
+                type="number"
+                id="totalPages"
+                placeholder="Enter total pages"
+            />
+
+            <label for="pagesRead">Pages Read Today:</label>
+            <input
+                type="number"
+                id="pagesRead"
+                placeholder="Enter pages read today"
+            />
+
+            <button onclick="updateProgress()">Update Progress</button>
+
+            <canvas id="progressChart"></canvas>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

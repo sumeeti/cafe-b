@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Forums - Café Bibliophile</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/forums.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1>Café Bibliophile</h1>
+                <p>Where Books Meet Coffee</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="forums.html">Forums</a></li>
+                    <li><a href="reading-corners.html">Reading Corners</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="challenges.html">Daily Challenges</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="forum-list">
+                <h2>Forums</h2>
+                <div class="forum">
+                    <h3>Public Forum - Book Reviews</h3>
+                    <button onclick="joinForum('Book Reviews')">Join</button>
+                </div>
+                <div class="forum">
+                    <h3>Private Forum - Fiction Lovers</h3>
+                    <button onclick="joinPrivateForum('Fiction Lovers')">
+                        Join (Invite Only)
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Café Bibliophile | All Rights Reserved</p>
+        </footer>
+    </body>
+</html>

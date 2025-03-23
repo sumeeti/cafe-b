@@ -1,0 +1,22 @@
+/* Forum Styles */
+.forum-list {
+    margin-top: 40px;
+    text-align: center;
+}
+.forum {
+    background-color: #d2b49f;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+button {
+    background-color: #4e4d4b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #6a5d5a;
+}

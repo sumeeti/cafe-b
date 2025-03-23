@@ -1,0 +1,62 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f6e6d8; /* Warm café beige */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.tracker-container {
+    background: #fff8f0; /* Soft coffee cream */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+    border: 2px solid #d4a373; /* Coffee brown border */
+}
+
+h2 {
+    color: #6d4c41; /* Deep coffee brown */
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #8d6e63; /* Soft cocoa */
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #b0886b;
+    border-radius: 5px;
+    background: #fff;
+}
+
+button {
+    background-color: #d4a373; /* Café mocha */
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #b37c5e; /* Darker espresso */
+}
+
+canvas {
+    margin-top: 20px;
+    max-width: 100%;
+}

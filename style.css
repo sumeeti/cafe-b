@@ -1,0 +1,86 @@
+/* Global Styles */
+•⁠ ⁠ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f3e5ab;
+    color: #4e4d4b;
+    padding: 20px;
+}
+h1,
+h2,
+h3 {
+    font-family: "Courier New", Courier, monospace;
+}
+
+header {
+    background-color: #4e4d4b;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+header .logo h1 {
+    font-size: 2.5em;
+}
+header .logo p {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 30px;
+}
+
+.intro {
+    text-align: center;
+    background-color: #bfa7a0;
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.feature {
+    background-color: #4e4d4b;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 25%;
+}
+
+.reminders {
+    background-color: #d2b49f;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #4e4d4b;
+    color: white;
+}
