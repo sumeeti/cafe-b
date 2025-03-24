@@ -1,8 +1,7 @@
-/* General Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #fdf6e3; /* Warm café-inspired background */
-    color: #5a3e2b; /* Dark brown for text */
+    background-color: #fef9f3;
+    color: #5a3e2b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,56 +9,57 @@ body {
     margin: 0;
 }
 
-/* Sign-in Container */
-.signin-container {
-    background: #fff8e7; /* Light cream background */
+.container {
+    background: #fff7ec;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     width: 350px;
+    text-align: center;
+    border: 2px solid #d4a373;
 }
 
-.signin-container h2 {
+h2 {
+    font-size: 24px;
+    color: #8b5e3b;
     margin-bottom: 1rem;
-    color: #8b4513; /* Warm brown */
 }
 
-/* Input Fields */
-input[type="text"],
-input[type="email"],
-input[type="password"] {
-    width: 100%;
+input {
+    width: 90%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #c9a66b; /* Soft brown */
-    border-radius: 6px;
-    background: #fff;
-    outline: none;
+    border: 1px solid #d4a373;
+    border-radius: 8px;
+    background-color: #fef6e4;
+    font-size: 14px;
+    color: #5a3e2b;
 }
 
-/* Button */
 button {
-    background-color: #d2691e; /* Warm coffee brown */
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
     width: 100%;
-    font-size: 1rem;
+    padding: 10px;
+    background-color: #c08552;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
 button:hover {
-    background-color: #a0522d; /* Darker brown */
+    background-color: #8b5e3b;
 }
 
-/* Links */
-p a {
-    color: #8b4513;
+.link {
+    display: block;
+    margin-top: 10px;
+    color: #c08552;
     text-decoration: none;
+    font-size: 14px;
 }
 
-p a:hover {
+.link:hover {
     text-decoration: underline;
 }
