@@ -1,8 +1,6 @@
-/* General Styling */
 body {
+    background-color: #f8ebe6;
     font-family: 'Poppins', sans-serif;
-    background-color: #fdf6e3; /* Warm café-inspired background */
-    color: #5a3e2b; /* Dark brown for text */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,55 +8,54 @@ body {
     margin: 0;
 }
 
-/* Login Container */
 .login-container {
-    background: #fff8e7; /* Light cream background */
+    background: #fff5f0;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 320px;
 }
 
-.login-container h2 {
+h2 {
+    color: #6d4c41;
+    font-size: 24px;
     margin-bottom: 1rem;
-    color: #8b4513; /* Warm brown */
 }
 
-/* Input Fields */
-input[type="email"],
-input[type="password"] {
+input {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #c9a66b; /* Soft brown */
-    border-radius: 6px;
+    margin: 8px 0;
+    border: 1px solid #d7ccc8;
+    border-radius: 8px;
     background: #fff;
-    outline: none;
 }
 
-/* Button */
 button {
-    background-color: #d2691e; /* Warm coffee brown */
+    background: #a98274;
     color: white;
-    padding: 10px 15px;
+    padding: 10px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     width: 100%;
-    font-size: 1rem;
+    font-size: 16px;
+    transition: background 0.3s;
 }
 
 button:hover {
-    background-color: #a0522d; /* Darker brown */
+    background: #8d6e63;
 }
 
-/* Links */
-p a {
-    color: #8b4513;
+.link {
+    display: block;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #6d4c41;
     text-decoration: none;
 }
 
-p a:hover {
+.link:hover {
     text-decoration: underline;
 }
