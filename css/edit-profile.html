@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile | Café Bibliophile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="edit-profile-container">
+        <div class="edit-profile-card">
+            <h2>Edit Profile</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your name">
+            
+            <label for="bio">Bio:</label>
+            <textarea id="bio" placeholder="Tell us about yourself..."></textarea>
+            
+            <label for="profile-pic">Profile Picture:</label>
+            <input type="file" id="profile-pic" accept="image/*">
+            
+            <button onclick="saveProfile()">Save</button>
+            <button onclick="cancelEdit()">Cancel</button>
+        </div>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>
