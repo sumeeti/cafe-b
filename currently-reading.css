@@ -12,13 +12,13 @@ body {
     margin: 0;
 }
 
-/* Reading Tracker Container */
-.tracker-container {
+/* Main Container */
+.reading-container {
     background: rgba(255, 255, 255, 0.9);
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-    width: 70%;
+    width: 80%;
     max-width: 600px;
     text-align: center;
     animation: fadeIn 1s ease-in-out;
@@ -27,36 +27,49 @@ body {
 h2 {
     color: #7a4e2d;
     font-size: 28px;
+    margin-bottom: 10px;
 }
 
+p {
+    font-size: 18px;
+    color: #5a3825;
+}
+
+/* Book Display */
 .book-cover {
-    width: 120px;
-    height: 160px;
-    object-fit: cover;
+    width: 150px;
+    height: 220px;
     border-radius: 10px;
-    border: 4px solid #caa17a;
-    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.book-cover:hover {
+    transform: scale(1.05);
+}
+
+/* Progress Bar */
+.progress-container {
+    width: 100%;
+    background: #eed9c4;
+    border-radius: 10px;
+    margin-top: 10px;
+    height: 12px;
+    position: relative;
+    overflow: hidden;
 }
 
 .progress-bar {
-    width: 100%;
-    height: 15px;
-    background: #fff8f0;
-    border-radius: 10px;
-    overflow: hidden;
-    border: 2px solid #caa17a;
-    margin-top: 10px;
-}
-
-.progress-fill {
+    width: 50%; /* Update dynamically */
     height: 100%;
-    width: 50%;
     background: #7a4e2d;
+    border-radius: 10px;
     transition: width 0.5s ease-in-out;
 }
 
-/* Update Progress Button */
-.update-progress {
+/* Buttons */
+.update-btn {
     padding: 10px 15px;
     background: #7a4e2d;
     color: white;
@@ -65,9 +78,10 @@ h2 {
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+    margin-top: 10px;
 }
 
-.update-progress:hover {
+.update-btn:hover {
     background: #5a3825;
 }
 
@@ -94,4 +108,5 @@ h2 {
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
 }
+
 
