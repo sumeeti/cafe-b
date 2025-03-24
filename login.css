@@ -1,7 +1,8 @@
-/* login.css */
+/* General Styling */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f8ebe6;
+    background-color: #fdf6e3; /* Warm café-inspired background */
+    color: #5a3e2b; /* Dark brown for text */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,55 +10,55 @@ body {
     margin: 0;
 }
 
+/* Login Container */
 .login-container {
-    background: #fff8f2;
-    padding: 20px;
+    background: #fff8e7; /* Light cream background */
+    padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 350px;
+    width: 320px;
 }
 
-h2 {
-    color: #8b5e3b;
+.login-container h2 {
+    margin-bottom: 1rem;
+    color: #8b4513; /* Warm brown */
 }
 
-.input-group {
-    margin: 15px 0;
-}
-
-input {
+/* Input Fields */
+input[type="email"],
+input[type="password"] {
     width: 100%;
     padding: 10px;
-    border: 2px solid #d4a373;
-    border-radius: 8px;
+    margin: 10px 0;
+    border: 1px solid #c9a66b; /* Soft brown */
+    border-radius: 6px;
     background: #fff;
-    font-size: 16px;
+    outline: none;
 }
 
+/* Button */
 button {
-    width: 100%;
-    background: #c27c5d;
+    background-color: #d2691e; /* Warm coffee brown */
     color: white;
+    padding: 10px 15px;
     border: none;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 18px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: 0.3s;
+    width: 100%;
+    font-size: 1rem;
 }
 
 button:hover {
-    background: #8b5e3b;
+    background-color: #a0522d; /* Darker brown */
 }
 
-a {
-    display: block;
-    margin-top: 10px;
+/* Links */
+p a {
+    color: #8b4513;
     text-decoration: none;
-    color: #c27c5d;
 }
 
-a:hover {
+p a:hover {
     text-decoration: underline;
 }
