@@ -1,0 +1,63 @@
+/* General styling */
+.currently-reading-container {
+    background-color: #fdf6e3; /* Soft café cream */
+    color: #5c4033; /* Warm brown text */
+    font-family: 'Poppins', sans-serif;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Input fields */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-container label {
+    font-weight: bold;
+}
+
+.input-container input {
+    padding: 8px;
+    border: 2px solid #d8a48f; /* Light coffee brown */
+    border-radius: 6px;
+    background: #fff7eb; /* Soft pastel cream */
+    color: #5c4033;
+}
+
+/* Button */
+button {
+    background-color: #b76e79; /* Warm dusty rose */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #914e5f; /* Darker shade on hover */
+}
+
+/* Progress bar */
+.progress-container {
+    margin-top: 15px;
+    background: #f3e5d7; /* Light café beige */
+    border-radius: 8px;
+    overflow: hidden;
+    height: 12px;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: #6d4c41; /* Dark coffee brown */
+    transition: width 0.5s ease-in-out;
+}
