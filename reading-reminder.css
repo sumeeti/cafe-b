@@ -1,0 +1,49 @@
+/* Popup background */
+#reminder-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefae0;
+    color: #6b4226;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    z-index: 1000;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Popup close button */
+#close-reminder {
+    background-color: #d4a373;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+#close-reminder:hover {
+    background-color: #b08968;
+}
+
+/* Set Reminder button */
+#set-reminder {
+    background-color: #6b4226;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+#set-reminder:hover {
+    background-color: #4a2d1f;
+}
