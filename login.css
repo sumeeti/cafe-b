@@ -1,61 +1,104 @@
 body {
-    background-color: #f8ebe6;
+    background: url('cute-cafe-doodle-backdrop.jpg') no-repeat center center fixed;
+    background-size: cover;
     font-family: 'Poppins', sans-serif;
+    color: #5A3E36;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    overflow: hidden;
+}
+
+/* Floating Doodles */
+.doodle {
+    position: absolute;
+    width: 50px;
+    opacity: 0.6;
+    animation: floatAnimation 6s infinite ease-in-out;
+}
+
+.doodle1 { top: 10%; left: 5%; animation-delay: 0s; }
+.doodle2 { top: 40%; left: 80%; animation-delay: 1.5s; }
+.doodle3 { top: 70%; left: 20%; animation-delay: 3s; }
+.doodle4 { top: 30%; left: 60%; animation-delay: 4.5s; }
+.doodle5 { top: 85%; left: 50%; animation-delay: 2s; }
+
+/* Floating effect */
+@keyframes floatAnimation {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
 }
 
 .login-container {
-    background: #fff5f0;
-    padding: 2rem;
+    background: rgba(255, 248, 240, 0.95);
+    padding: 20px;
     border-radius: 12px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 320px;
+    position: relative;
+    animation: popup 0.5s ease-out;
+}
+
+/* Glowing soft effect */
+@keyframes glow {
+    0% { box-shadow: 0 0 5px #e6c2a6; }
+    50% { box-shadow: 0 0 20px #d4a373; }
+    100% { box-shadow: 0 0 5px #e6c2a6; }
+}
+
+.login-container:hover {
+    animation: glow 2s infinite alternate;
 }
 
 h2 {
-    color: #6d4c41;
     font-size: 24px;
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
+    color: #8B5E3C;
 }
 
 input {
     width: 100%;
     padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #d7ccc8;
+    margin: 10px 0;
+    border: 2px solid #B08968;
     border-radius: 8px;
-    background: #fff;
+    font-size: 16px;
+    background: #FFF5E1;
 }
 
 button {
-    background: #a98274;
+    background: #D4A373;
     color: white;
-    padding: 10px;
     border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 100%;
+    padding: 10px 15px;
     font-size: 16px;
-    transition: background 0.3s;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
 button:hover {
-    background: #8d6e63;
+    background: #B08968;
 }
 
-.link {
+a {
     display: block;
-    margin-top: 12px;
-    font-size: 14px;
-    color: #6d4c41;
+    margin-top: 10px;
+    color: #8B5E3C;
     text-decoration: none;
+    font-size: 14px;
 }
 
-.link:hover {
+a:hover {
     text-decoration: underline;
+}
+
+/* Cute popup animation */
+@keyframes popup {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
 }
