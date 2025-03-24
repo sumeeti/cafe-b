@@ -1,57 +1,103 @@
-/* forums-thread.css */
+/* Forum Thread Page */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #fdf0d5;
-    color: #5e503f;
-    margin: 0;
-    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #fdf6e3;
+    background-image: url('images/cafe-doodle-bg.png'); /* Cute doodle backdrop */
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding-top: 50px;
+    margin: 0;
 }
 
-.container {
-    width: 60%;
-    background: #fff3e0;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+/* Discussion Posts Container */
+.discussion-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
 h2 {
-    text-align: center;
-    color: #6b4226;
+    color: #7a4e2d;
+    font-size: 30px;
+    margin-bottom: 15px;
 }
 
+/* Individual Posts */
 .post {
     background: #f8e1c4;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.post:hover {
+    transform: scale(1.02);
+}
+
+.post strong {
+    color: #5a3825;
+    font-size: 18px;
+}
+
+/* Reply Section */
+#reply-input {
+    width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    border: 2px solid #7a4e2d;
     border-radius: 8px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-}
-
-input[type="text"] {
-    width: 80%;
-    padding: 8px;
+    font-size: 16px;
     margin-top: 10px;
-    border: 1px solid #c9a67a;
-    border-radius: 6px;
-    background: #fffaf3;
+    background: #fef6e4;
 }
 
-button {
-    background: #b5651d;
+#post-reply {
+    padding: 10px 15px;
+    background: #7a4e2d;
     color: white;
-    padding: 8px 12px;
+    font-size: 16px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+    margin-top: 10px;
 }
 
-button:hover {
-    background: #8d4b16;
+#post-reply:hover {
+    background: #5a3825;
 }
+
+/* Floating doodles animation */
+.doodle {
+    position: absolute;
+    width: 50px;
+    opacity: 0.6;
+    animation: float 6s infinite ease-in-out;
+}
+
+.doodle1 { top: 10%; left: 5%; animation-delay: 0s; }
+.doodle2 { top: 85%; left: 80%; animation-delay: 2s; }
+.doodle3 { top: 55%; left: 60%; animation-delay: 4s; }
+.doodle4 { top: 95%; left: 20%; animation-delay: 6s; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
