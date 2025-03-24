@@ -19,42 +19,54 @@ body {
     border-radius: 15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     width: 80%;
-    max-width: 800px;
+    max-width: 700px;
     text-align: center;
     animation: fadeIn 1s ease-in-out;
 }
 
 h2 {
     color: #7a4e2d;
-    font-size: 28px;
+    font-size: 30px;
+    margin-bottom: 15px;
 }
 
-/* Discussion Posts */
-.post {
-    background: #fff8f0;
-    padding: 10px;
+/* Discussion Threads */
+.thread {
+    background: #f8e1c4;
+    padding: 15px;
     border-radius: 10px;
-    margin: 10px 0;
-    border: 2px solid #caa17a;
-    transition: transform 0.3s ease-in-out;
+    margin-bottom: 15px;
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s;
 }
 
-.post:hover {
+.thread:hover {
     transform: scale(1.02);
 }
 
-/* Reply Input */
-#reply-input {
-    width: 90%;
-    padding: 10px;
-    border-radius: 8px;
-    border: 2px solid #caa17a;
-    font-size: 16px;
-    outline: none;
+.thread h3 {
+    color: #5a3825;
+    margin-bottom: 5px;
 }
 
-/* Post Reply Button */
-#post-reply {
+.thread p {
+    color: #7a4e2d;
+    font-size: 16px;
+}
+
+/* Reply Section */
+.reply-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #7a4e2d;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+    background: #fef6e4;
+}
+
+.reply-btn {
     padding: 10px 15px;
     background: #7a4e2d;
     color: white;
@@ -63,9 +75,10 @@ h2 {
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+    margin-top: 10px;
 }
 
-#post-reply:hover {
+.reply-btn:hover {
     background: #5a3825;
 }
 
@@ -92,4 +105,3 @@ h2 {
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
 }
-
