@@ -1,63 +1,97 @@
-/* General styling */
-.currently-reading-container {
-    background-color: #fdf6e3; /* Soft café cream */
-    color: #5c4033; /* Warm brown text */
-    font-family: 'Poppins', sans-serif;
-    width: 60%;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Input fields */
-.input-container {
+/* Currently Reading Page Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fdf6e3;
+    background-image: url('images/cafe-doodle-bg.png'); /* Cute doodle backdrop */
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    padding-top: 50px;
+    margin: 0;
+}
+
+/* Reading Tracker Container */
+.tracker-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    max-width: 600px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    color: #7a4e2d;
+    font-size: 28px;
+}
+
+.book-cover {
+    width: 120px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 4px solid #caa17a;
     margin-bottom: 15px;
 }
 
-.input-container label {
-    font-weight: bold;
-}
-
-.input-container input {
-    padding: 8px;
-    border: 2px solid #d8a48f; /* Light coffee brown */
-    border-radius: 6px;
-    background: #fff7eb; /* Soft pastel cream */
-    color: #5c4033;
-}
-
-/* Button */
-button {
-    background-color: #b76e79; /* Warm dusty rose */
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background-color: #914e5f; /* Darker shade on hover */
-}
-
-/* Progress bar */
-.progress-container {
-    margin-top: 15px;
-    background: #f3e5d7; /* Light café beige */
-    border-radius: 8px;
+.progress-bar {
+    width: 100%;
+    height: 15px;
+    background: #fff8f0;
+    border-radius: 10px;
     overflow: hidden;
-    height: 12px;
+    border: 2px solid #caa17a;
+    margin-top: 10px;
 }
 
 .progress-fill {
     height: 100%;
-    width: 0%;
-    background: #6d4c41; /* Dark coffee brown */
+    width: 50%;
+    background: #7a4e2d;
     transition: width 0.5s ease-in-out;
 }
+
+/* Update Progress Button */
+.update-progress {
+    padding: 10px 15px;
+    background: #7a4e2d;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.update-progress:hover {
+    background: #5a3825;
+}
+
+/* Floating doodles animation */
+.doodle {
+    position: absolute;
+    width: 50px;
+    opacity: 0.6;
+    animation: float 6s infinite ease-in-out;
+}
+
+.doodle1 { top: 5%; left: 10%; animation-delay: 0s; }
+.doodle2 { top: 80%; left: 85%; animation-delay: 2s; }
+.doodle3 { top: 50%; left: 55%; animation-delay: 4s; }
+.doodle4 { top: 90%; left: 25%; animation-delay: 6s; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
