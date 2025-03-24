@@ -1,0 +1,65 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdf6e3; /* Warm café-inspired background */
+    color: #5a3e2b; /* Dark brown for text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Sign-in Container */
+.signin-container {
+    background: #fff8e7; /* Light cream background */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+}
+
+.signin-container h2 {
+    margin-bottom: 1rem;
+    color: #8b4513; /* Warm brown */
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #c9a66b; /* Soft brown */
+    border-radius: 6px;
+    background: #fff;
+    outline: none;
+}
+
+/* Button */
+button {
+    background-color: #d2691e; /* Warm coffee brown */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #a0522d; /* Darker brown */
+}
+
+/* Links */
+p a {
+    color: #8b4513;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
